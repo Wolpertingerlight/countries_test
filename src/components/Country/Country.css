@@ -1,0 +1,39 @@
+.cardN {
+    width: 13vw;
+    height: 13vw;
+    cursor: pointer;
+    border-radius: 1vw;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+
+}
+
+.CountryInfo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 9;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    padding-top: 1vw;
+}
+
+p {
+    margin: 0;
+    padding-left: 1vw;
+    word-wrap: break-word;
+    width: 13vw;
+    font-size: 1vw;
+}
