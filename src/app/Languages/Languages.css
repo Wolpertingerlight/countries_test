@@ -1,29 +1,17 @@
 li {
-    margin: 5px;
-    padding: 5px;
     list-style-type: none;
+    font-size: 1.5vw;
 
 }
 
-a {
+.languages-ul p {
     padding-left: 5px;
     color: black;
-    text-decoration: none;
+    font-family: 'Inter', sans-serif;
 }
 
-a:active {
+.languages-ul li:hover p {
     border-left: 5px solid #058CD9;
     font-weight: bold;
-}
-
-li:hover a {
-    border-left: 5px solid #058CD9;
-    font-weight: bold;
-}
-
-
-li:hover:after a,
-li:focus:after a {
-    border-left: 5px solid #058CD9;
-
+    cursor: pointer;
 }

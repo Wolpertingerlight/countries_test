@@ -1,19 +1,19 @@
 import './Languages.css';
 import React from "react";
 
-function Languages() {
+function Languages({languageFilter}) {
     const languages = ["Chinese", "Spanish", "English", "Arabic", "Hindi", "Bengali", "Russian", "Japanese", "Italian",
         "French", "Korean", "German"];
 
     return (
-        <div className='LanguagesContainer'>
-            <ul>
-                <li>
-                    <a href="/" style={{fontWeight: 'bold'}}>Все</a>
+        <div className='languages-container'>
+            <ul className='languages-ul'>
+                <li style={{fontWeight: "bold"}}>
+                    <p onClick={() => languageFilter()}>Все</p>
                 </li>
-                {languages.map((title, index) => (
-                    <li key={index}>
-                        <a href={'/?language=' + title}>{title}</a>
+                {languages.map((value, key) => (
+                    <li key={key} onClick={() => languageFilter(value)}>
+                        <p>{value}</p>
                     </li>
                 ))}
             </ul>
