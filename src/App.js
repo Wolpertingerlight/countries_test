@@ -27,9 +27,9 @@ function App() {
 
     const lastCountryIndex = currentPage * countriesPerPage;
     const firstCountryIndex = lastCountryIndex - countriesPerPage;
-    const currentCountries = countries.slice(firstCountryIndex, lastCountryIndex)
-    const paginate = pageNumber => setCurrentPage(pageNumber)
-    const languageFilter = language => getCountriesByFilter(language)
+    const currentCountries = countries.slice(firstCountryIndex, lastCountryIndex);
+    const paginate = pageNumber => setCurrentPage(pageNumber);
+    const languageFilter = language => {paginate(1); getCountriesByFilter(language);}
 
     return (
         <div className="main-container">
