@@ -11,7 +11,7 @@ function App() {
     const [countries, setCountries] = useState([]);
     const [showAll, setShowAll] = useState(false);
 
-
+   /*Коммент для проверки*/
     const getCountriesByFilter = async (language = 'all') => {
         let filter = language === 'all' ? 'all' : 'lang/' + language
         let url = 'https://restcountries.com/v3.1/' + filter.toLowerCase();
